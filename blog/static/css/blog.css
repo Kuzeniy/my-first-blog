@@ -19,7 +19,6 @@ h2 a {
 .hover-title:hover {
     transition:2s;
     transform: translateX(100px);
-    transform: rotate(360deg);
 }
 
 .page-header {

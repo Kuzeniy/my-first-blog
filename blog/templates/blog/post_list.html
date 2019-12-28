@@ -3,7 +3,7 @@
 {% block content %}
 {% for post in posts %}
     <div class="post">
-        <h2 class="hover-title"><a href="#">{{ post.title }}</a></h2>
+        <h2 class="hover-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
         <img src="{{ post.image_urls }}" alt="">
         <p>{{ post.text|linebreaksbr }}</p>
         <p>published: {{ post.created_date }}</p>
